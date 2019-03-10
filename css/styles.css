@@ -33,6 +33,17 @@ address {
 	margin: 54px 0;
 }
 
+.row-box {
+	position: relative;
+	display: block;
+	width: 100%;
+	clear: left;
+}
+.col {
+	float: left;
+	width: 50%;
+}
+
 /* Style for Nav Bar */
 #nav {
 	display: block;
@@ -62,7 +73,7 @@ ul.navbar {
 	margin-right: 23px;
 }
 
-/*Introduction Box */
+/*Introduction banner box */
 
 .banner {
 	background-color: #009ddc;
@@ -80,6 +91,8 @@ ul.navbar {
 	font-weight: 200;
 }
 
+/* Styling for blog box */
+
 .blog-content {
 	position: relative;
 	display: block;
@@ -89,7 +102,7 @@ ul.navbar {
 
 .blog-content .image-container {
 	float: left;
-	width: 30%;
+	width: 36%;
 	margin-right: 5%;
 }
 .blog-content .image-container img {
@@ -97,10 +110,41 @@ ul.navbar {
 }
 .blog-content .post-container {
 	float: left;
-	width: 65%;
+	width: 40%;
 }
 
+/* Styling for HTML blog table */
+table.table-content { 
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: red;
+}
+table.table-content td {
+	padding: 0 5% 0 0;
+	vertical-align: top;
+}
+table.table-content img {
+	width: 100%;
+} 
+
+/* Styling for HTML contact box */
 #contact a {
   color: #07aeda;
   text-decoration: none;
+}
+
+/* Footer HTML5 */
+footer {
+	background-color: #444;
+	color: gray;
+	margin-top: 5%;
+	padding: 5% 0;
+	text-align: center;
+}
+footer a,
+footer a:link,
+footer a:visited,
+footer a:active {
+	color: #fff;
 }
