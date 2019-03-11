@@ -79,6 +79,7 @@ ul.navbar {
 	background-color: #009ddc;
 	padding: 20px 40px;
 }
+
 .banner h1 {
 	font-size: 64px;
 	text-transform: uppercase;
@@ -147,4 +148,43 @@ footer a:link,
 footer a:visited,
 footer a:active {
 	color: #fff;
+}
+
+/*
+Make sure to set grid values in px (not rem, em, or %)
+	sm: 	420px,
+	md: 	720px,
+	lg: 	960px,
+	x-lg: 	1024px
+
+----CSS3 transition
+-- transition sets
+transition: font-size 12s; 	transition is set to font-size at 12 seconds duration
+transition: color 12s; 		transition is set to color at 12 seconds duration
+
+-- combine them all into one declaration:
+transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
+
+
+transition: color 12s, font-size 12s;
+-webkit-transition: color 12s, font-size 12s;
+   -moz-transition: color 12s, font-size 12s;
+     -o-transition: color 12s, font-size 12s;
+*/
+
+@media (max-width: 720px) {
+	.banner h1 {
+		font-size: 32px;
+		transition: font 3s ease;
+	}
+}
+@media (min-width: 960px) {
+	.banner h1 {
+		font-size: 60px;
+		transition: font 5s ease;
+	}
 }
